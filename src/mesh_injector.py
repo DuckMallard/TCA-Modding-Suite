@@ -8,7 +8,7 @@ import UnityPy
 BLENDER_PATH = "C:/Program Files/Blender Foundation/Blender 3.0/blender.exe"
 BLEND_PATH = "/models/Triangle.blend"
 ASSET_FILE_PATH_IN = "C:/Program Files (x86)/Steam/steamapps/common/TinyCombatArena/Arena_Data/resources.assets"
-ASSET_FILE_PATH_OUT = "C:/Program Files (x86)/Steam/Backups/Tiny Combat Arena Dev/Arena_Data/resources.assets"
+ASSET_FILE_PATH_OUT = "C:/Program Files (x86)/Steam/Backups/TinyCombatArenaDev/Arena_Data/resources.assets"
 ASSET_PATH_ID = 225
 
 completed_process = subprocess.run([BLENDER_PATH, BLEND_PATH, "--python", "/src/mesh_builder_blender.py", "-b"])
