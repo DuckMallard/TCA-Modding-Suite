@@ -30,6 +30,10 @@ ASSET_PATH_ID = # ID of the asset we are swapping (Default of 225 is fine for no
 ```
 - Run `mesh_injector.py` using command prompt, or simply by double clicking the file.
 - Once the process has completed you can then run Arena.exe in your backup folder.
+- If the previous steps were followed correctly you should see any instance of the Mk82 be replaced with your custom mesh
+---
+###Notes:
+- This is a very early release and is likely to have many bugs. Either open an issue, or hop on the [TCA Modding Server](https://discord.gg/D5ScNgcTJh) to receieve support.
 
 
 
