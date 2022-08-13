@@ -13,7 +13,7 @@ Current model injection allows for user created meshes in blender to be placed i
 
 #### Prerequisites:
 - [Blender](https://www.blender.org/download/) (Version requirements unknown)
-- [Python](https://www.python.org/downloads/z) (3.x.x)
+- [Python](https://www.python.org/downloads) (3.x.x)
 - [TCA Testers branch](https://store.steampowered.com/news/app/1347550/view/3376030426065446508) (0.9.0.1T)
 - [UnityPy](https://pypi.org/project/UnityPy/) (1.9.6+)
 
