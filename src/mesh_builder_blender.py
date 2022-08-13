@@ -1,7 +1,6 @@
 # "C:\Program Files\Blender Foundation\Blender 3.0\blender.exe" "\models\Triangle.blend" --python "\src\mesh_builder_blender.py" -b
 
 import bpy
-import math
 import struct
 import json
 import itertools

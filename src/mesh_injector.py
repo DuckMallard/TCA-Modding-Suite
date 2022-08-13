@@ -5,7 +5,7 @@ import UnityPy
 completed_process = subprocess.run(["C:/Program Files/Blender Foundation/Blender 3.0/blender.exe", "/models/Triangle.blend", "--python", "/src/mesh_builder_blender.py", "-b"])
 completed_process.check_returncode()
 
-ASSET_FILE_PATH = "C:/Program Files (x86)/Steam/Backups/Tiny Combat Arena Dev/Arena_Data/resources.assets"
+ASSET_FILE_PATH = 'C:/Program Files (x86)/Steam/Backups/Tiny Combat Arena Dev/Arena_Data/resources_old.assets'
 ASSET_PATH_ID = 225
 
 with open("./_dump.json", "r") as file:
@@ -31,5 +31,5 @@ mesh_tree["m_VertexData"]["m_Channels"][4] = {"stream": 0, "offset": 24, "format
 
 mesh_obj.save_typetree(mesh_tree)
 
-with open(ASSET_FILE_PATH, "wb") as file:
+with open('C:/Program Files (x86)/Steam/Backups/Tiny Combat Arena Dev/Arena_Data/resources.assets', "wb") as file:
     file.write(env.file.save())

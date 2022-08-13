@@ -1,13 +1,13 @@
 import UnityPy
 import json
 
-src = "../Arena_Data/resources_old.assets"
+src = 'C:/Program Files (x86)/Steam/Backups/Tiny Combat Arena Dev/Arena_Data/resources_old.assets'
 
 data = None
-with open("./dumps/data.json", "r") as file:
+with open("./_dump.json", "r") as file:
     data = json.load(file)
-data_size = data["m_DataSize"]
-index_buffer = data["m_IndexBuffer"]
+data_size = data["data_size"]
+index_buffer = data["index_buffer"]
 
 env = UnityPy.load(src)
 mesh_obj = [obj for obj in env.objects if obj.path_id == 225][0]
@@ -27,5 +27,5 @@ mesh_tree["m_VertexData"]["m_Channels"][1] = {"stream": 0, "offset": 12, "format
 mesh_tree["m_VertexData"]["m_Channels"][4] = {"stream": 0, "offset": 24, "format": 0, "dimension": 2}
 mesh_obj.save_typetree(mesh_tree)
 
-with open("../Arena_Data/resources.assets", "wb") as file:
+with open('C:/Program Files (x86)/Steam/Backups/Tiny Combat Arena Dev/Arena_Data/resources.assets', "wb") as file:
     file.write(env.file.save())
