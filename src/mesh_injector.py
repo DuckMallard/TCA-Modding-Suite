@@ -1,3 +1,5 @@
+# Copyright (c) 2022 JMayh with MIT Licensce
+
 import subprocess
 import json
 import UnityPy

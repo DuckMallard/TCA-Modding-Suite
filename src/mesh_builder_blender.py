@@ -1,4 +1,4 @@
-# "C:\Program Files\Blender Foundation\Blender 3.0\blender.exe" "\models\Triangle.blend" --python "\src\mesh_builder_blender.py" -b
+# Copyright (c) 2022 JMayh with MIT Licensce
 
 import bpy
 import struct
