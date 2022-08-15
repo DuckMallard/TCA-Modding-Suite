@@ -24,8 +24,8 @@ class Node():
             return ([self.game_object_name] + self.parent._get_path())
         return [self.game_object_name]
 
-    def get_subnodes(self) -> list[object]:
-        subnode_arr: list[Node] = []
+    def get_subnodes(self) -> list[int]:
+        subnode_arr: list[int] = []
         for child in self.children:
             subnode_arr.extend([child.id] + child.get_subnodes())
         return subnode_arr

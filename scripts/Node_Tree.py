@@ -56,10 +56,7 @@ class Node_Tree():
         return None
 
     def get_nodes_by_go_name(self, name: str) -> list[Node]:
-        try:
-            return [node for node in self.nodes if node.game_object_name == name]
-        except IndexError:
-            return []
+        return [node for node in self.nodes if node.game_object_name == name]
 
     def get_node_by_go_path(self, path: str) -> list[Node]:
         name: str = path.split("/")[-1]
@@ -85,3 +82,9 @@ class Node_Tree():
     def get_submeshes_by_go_path(self, path: str) -> list[int]:
         node: Node = self.get_node_by_go_path(path)
         return node.get_submeshes()
+
+    def get_transform_by_mesh_id(self, id: int) -> Node:
+        try:
+            return [node for node in self.nodes if id in node.mesh_children][0]
+        except IndexError:
+            return []
