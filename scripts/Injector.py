@@ -11,6 +11,8 @@ class Injector():
         completed_process = subprocess.run(["blender", blend_file_path, "--python", "Builder.py", "-b"])
         completed_process.check_returncode()
 
+        print("Ran Builder")
+
         with open("./_dump.json", "r") as file:
             [index_buffer, data_size] = json.load(file).values()
 

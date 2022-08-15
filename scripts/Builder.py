@@ -38,6 +38,7 @@ def mesh_asset_from_blend(blend_mesh_name, dump_file_path, channel_bit_flag = 0b
     with open(dump_file_path, "w") as file:
         json.dump({"index_buffer": index_buffer, "data_size": data_size}, file)
 
+print("Got run")
 mesh_asset_from_blend("Test", "./_dump.json")
 
 bpy.ops.wm.quit_blender()

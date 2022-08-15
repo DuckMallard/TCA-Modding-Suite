@@ -1,8 +1,7 @@
 from Node_Tree import Node_Tree
 from Injector import Injector
-from pathlib import Path
 
-BLEND_FILE = r'C:\Users\jmayh\Documents\Programming\TCA-Modding-Suite\models\Example.blend'
+BLEND_FILE = "models/Example.blend"
 
 tree: Node_Tree = Node_Tree("C:/Program Files (x86)/Steam/steamapps/common/TinyCombatArena/Arena_Data/resources.assets")
 injector: Injector = Injector("C:/Program Files (x86)/Steam/steamapps/common/TinyCombatArena/Arena_Data/resources.assets") 
